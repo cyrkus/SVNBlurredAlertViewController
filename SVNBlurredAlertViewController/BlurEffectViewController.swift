@@ -19,7 +19,7 @@ public final class SVNBlurredAlertViewController: UIViewController {
         return manager
     }()
     
-    lazy var theme = SVNTheme_DefaultDark()
+    var theme: SVNTheme!
     
     lazy var checkmarkMeta: SVNShapeMetaData = {
         let shape = SVNShapeMetaData(shapes: nil,
@@ -82,11 +82,24 @@ public final class SVNBlurredAlertViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        if model == nil {
-            model = SVNBlurredAlertVM()
+        if self.theme == nil {
+            self.theme = SVNTheme_DefaultDark()
+        }
+        if self.model == nil {
+            self.model = SVNBlurredAlertVM()
         }
         setInitialView()
         setCircleCrop()
+    }
+    
+    init(theme:SVNTheme, model:SVNBlurredAlertModel){
+        self.theme = theme
+        self.model = model
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("this class is does not support init(coder:) use init() or init(theme:, model:)")
     }
     
     private func setInitialView(){
@@ -97,7 +110,7 @@ public final class SVNBlurredAlertViewController: UIViewController {
         //Create the shapes and containers to house them
         self.checkmarkMeta.shapes = [self.shapesManager.createCheckMark(with: self.checkmarkMeta)]
         self.circleMeta.shapes = [self.shapesManager.createCircleLayer(with: self.circleMeta)]
-
+        
         let checkView = UIView(frame: self.shapesManager.fetchRect(with: self.checkmarkMeta))
         checkView.backgroundColor = UIColor.clear
         self.view.addSubview(checkView)
