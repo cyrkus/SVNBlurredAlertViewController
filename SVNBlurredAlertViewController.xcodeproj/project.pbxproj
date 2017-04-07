@@ -103,7 +103,6 @@
 				A1B105041E9853D8000C923A /* Frameworks */,
 				A1B105051E9853D8000C923A /* Headers */,
 				A1B105061E9853D8000C923A /* Resources */,
-				A13A87571E9858210027E214 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -157,23 +156,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A13A87571E9858210027E214 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1B105031E9853D8000C923A /* Sources */ = {
