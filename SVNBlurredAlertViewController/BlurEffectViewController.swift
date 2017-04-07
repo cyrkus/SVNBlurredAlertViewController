@@ -72,13 +72,7 @@ public final class SVNBlurredAlertViewController: UIViewController {
         return button
     }()
     
-    var model: SVNBlurredAlertModel? {
-        didSet {
-            self.header.text = model?.header
-            self.body.text = model?.body
-            self.acceptButton.setTitle(model?.buttonText, for: .normal)
-        }
-    }
+    var model: SVNBlurredAlertModel?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +86,7 @@ public final class SVNBlurredAlertViewController: UIViewController {
         setCircleCrop()
     }
     
-    public init(theme:SVNTheme, model:SVNBlurredAlertModel){
+    public init(theme:SVNTheme, model: SVNBlurredAlertModel){
         self.theme = theme
         self.model = model
         super.init(nibName: nil, bundle: nil)
@@ -104,6 +98,9 @@ public final class SVNBlurredAlertViewController: UIViewController {
     
     private func setInitialView(){
         self.view.backgroundColor = UIColor.clear
+        self.header.text = model?.header
+        self.body.text = model?.body
+        self.acceptButton.setTitle(model?.buttonText, for: .normal)
     }
     
     private func setCircleCrop(){
