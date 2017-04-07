@@ -92,7 +92,7 @@ public final class SVNBlurredAlertViewController: UIViewController {
         setCircleCrop()
     }
     
-    init(theme:SVNTheme, model:SVNBlurredAlertModel){
+    public init(theme:SVNTheme, model:SVNBlurredAlertModel){
         self.theme = theme
         self.model = model
         super.init(nibName: nil, bundle: nil)
