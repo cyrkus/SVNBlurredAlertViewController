@@ -1,7 +1,8 @@
 # SVNBlurredAlertViewController
 A Blurred Overlay View Controller with a circle mask.
+This ViewController is intended to be added as a child ViewController
 
-
+If you want to change the styling use init(SVNTheme:, SVNBlurredAlertModel:)
 
 
 # To install this framework
