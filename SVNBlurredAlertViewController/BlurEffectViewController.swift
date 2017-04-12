@@ -75,14 +75,14 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
     
     public init(theme: SVNTheme?, model: SVNBlurredAlertModel?){
         super.init(nibName: nil, bundle: nil)
-        self.theme = theme == nil ? SVNTheme_DefaultDark() : theme
+        self.theme = theme == nil ? SVNTheme_DefaultDark() : theme!
         self.model = model == nil ? SVNBlurredAlertModel_Default() : model
     }
     
     public  init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, theme: SVNTheme?, model: SVNBlurredAlertModel?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.model = model == nil ? SVNBlurredAlertModel_Default() : model
-        self.theme = theme == nil ? SVNTheme_DefaultDark() : theme
+        self.theme = theme == nil ? SVNTheme_DefaultDark() : theme!
     }
     
     required public init?(coder aDecoder: NSCoder) {
