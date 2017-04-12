@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal struct SVNBlurredAlertVM: SVNBlurredAlertModel {
+internal struct SVNBlurredAlertModel_Default: SVNBlurredAlertModel {
     var header: String = "Sucess!"
     var body: String = "You've Completed the task"
     var buttonText: String = "Continue"

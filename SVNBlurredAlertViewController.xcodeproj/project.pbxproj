@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A13A874B1E9857CE0027E214 /* SVNBlurredAlertVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874A1E9857CE0027E214 /* SVNBlurredAlertVM.swift */; };
+		A13A874B1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874A1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift */; };
 		A13A874D1E9857D80027E214 /* BlurEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874C1E9857D80027E214 /* BlurEffectViewController.swift */; };
 		A13A874F1E9857FA0027E214 /* SVNBlurredAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874E1E9857FA0027E214 /* SVNBlurredAlertModel.swift */; };
 		A13A87541E98581C0027E214 /* SVNMaterialButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13A87511E98581C0027E214 /* SVNMaterialButton.framework */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A13A874A1E9857CE0027E214 /* SVNBlurredAlertVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNBlurredAlertVM.swift; sourceTree = "<group>"; };
+		A13A874A1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNBlurredAlertModel_Default.swift; sourceTree = "<group>"; };
 		A13A874C1E9857D80027E214 /* BlurEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectViewController.swift; sourceTree = "<group>"; };
 		A13A874E1E9857FA0027E214 /* SVNBlurredAlertModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNBlurredAlertModel.swift; sourceTree = "<group>"; };
 		A13A87511E98581C0027E214 /* SVNMaterialButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVNMaterialButton.framework; path = Carthage/Build/iOS/SVNMaterialButton.framework; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		A1B1050A1E9853D8000C923A /* SVNBlurredAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A13A874A1E9857CE0027E214 /* SVNBlurredAlertVM.swift */,
+				A13A874A1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift */,
 				A13A874E1E9857FA0027E214 /* SVNBlurredAlertModel.swift */,
 				A13A874C1E9857D80027E214 /* BlurEffectViewController.swift */,
 				A1B1050B1E9853D8000C923A /* SVNBlurredAlertViewController.h */,
@@ -190,7 +190,7 @@
 			files = (
 				A13A874D1E9857D80027E214 /* BlurEffectViewController.swift in Sources */,
 				A13A874F1E9857FA0027E214 /* SVNBlurredAlertModel.swift in Sources */,
-				A13A874B1E9857CE0027E214 /* SVNBlurredAlertVM.swift in Sources */,
+				A13A874B1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
