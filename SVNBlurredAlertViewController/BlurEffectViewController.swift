@@ -7,19 +7,12 @@
 //
 
 import UIKit
-import SVNTheme
-import SVNShapesManager
+import SVNModalViewController
 import SVNMaterialButton
+import SVNShapesManager
+import SVNTheme
 
-public final class SVNBlurredAlertViewController: UIViewController {
-    
-    
-    lazy var shapesManager: SVNShapesManager = {
-        let manager = SVNShapesManager(container: self.view.frame)
-        return manager
-    }()
-    
-    var theme: SVNTheme!
+public final class SVNBlurredAlertViewController: SVNModalViewController {
     
     lazy var checkmarkMeta: SVNShapeMetaData = {
         let shape = SVNShapeMetaData(shapes: nil,
@@ -76,24 +69,24 @@ public final class SVNBlurredAlertViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        if self.theme == nil {
-            self.theme = SVNTheme_DefaultDark()
-        }
-        if self.model == nil {
-            self.model = SVNBlurredAlertVM()
-        }
         setInitialView()
         setCircleCrop()
     }
     
-    public init(theme:SVNTheme, model: SVNBlurredAlertModel){
+    public init(theme: SVNTheme, model: SVNBlurredAlertModel){
+        super.init(nibName: nil, bundle: nil)
         self.theme = theme
         self.model = model
-        super.init(nibName: nil, bundle: nil)
+    }
+    
+    public  init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, theme: SVNTheme, model: SVNBlurredAlertModel) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.model = model
+        self.theme = theme
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("this class is does not support init(coder:) use init() or init(theme:, model:)")
+        fatalError("this class is does not support init(coder:) use init(), init(theme:, model:), or init(nibName: bundle: theme: model:")
     }
     
     private func setInitialView(){
