@@ -57,7 +57,7 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
     }()
     
     lazy var acceptButton: SVNMaterialButton = {
-        let button = SVNMaterialButtonSVNMaterialButton(frame: CGRect(
+        let button = SVNMaterialButton(frame: CGRect(
             x: 35,
             y: self.view.frame.height - (65 + 25),
             width: self.view.frame.width - (35 * 2),
