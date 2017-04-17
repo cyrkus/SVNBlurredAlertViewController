@@ -62,10 +62,15 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
             y: self.view.frame.height - (65 + 25),
             width: self.view.frame.width - (35 * 2),
             height: 65), color: self.theme.primaryDialogColor)
+        button.addTarget(self, action: #selector(SVNBlurredAlertViewController.didAccept), for: .touchUpInside)
         return button
     }()
     
-    var model: SVNBlurredAlertModel?
+    public var model: SVNBlurredAlertModel?
+    
+    //MARK Coordinator ivars
+    
+    public var blurredAlertVCShouldDismiss: (() -> Void)!
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +99,7 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
         self.header.text = model?.header
         self.body.text = model?.body
         self.acceptButton.setTitle(model?.buttonText, for: .normal)
+        
     }
     
     private func setCircleCrop(){
@@ -144,5 +150,10 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
         effectView.addSubview(self.acceptButton)
         effectView.addSubview(self.body)
         effectView.addSubview(self.header)
+    }
+    
+    //MARK: Actions
+    internal func didAccept(){
+        self.blurredAlertVCShouldDismiss()
     }
 }
