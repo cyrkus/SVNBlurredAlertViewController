@@ -69,7 +69,7 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
     public var model: SVNBlurredAlertModel?
     
     //MARK Coordinator ivars
-    var coordShouldDismiss: (() -> Void)!
+    public var coordShouldDismiss: (() -> Void)!
     
     
     public override func shouldDismiss() {
