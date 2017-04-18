@@ -69,8 +69,12 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
     public var model: SVNBlurredAlertModel?
     
     //MARK Coordinator ivars
+    var coordShouldDismiss: (() -> Void)!
     
-    public var blurredAlertVCShouldDismiss: (() -> Void)!
+    
+    public override func shouldDismiss() {
+        self.coordShouldDismiss()
+    }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -154,6 +158,6 @@ public final class SVNBlurredAlertViewController: SVNModalViewController {
     
     //MARK: Actions
     internal func didAccept(){
-        self.blurredAlertVCShouldDismiss()
+        self.shouldDismiss()
     }
 }
