@@ -1,9 +1,11 @@
 # SVNBlurredAlertViewController
 A Blurred Overlay View Controller with a circle mask.
-
+[SVNBlurredAlertViewController](/images/Rectangle 62.png)
 
 # To use this framework
-SVNBlurredAlertViewController is intended to be added as a child ViewController
+SVNBlurredAlertViewController is intended to be added as a child ViewController it has a
+[SVNMaterialButton](https://github.com/sevenapps/SVNMaterialButton) and is a subclass of [SVNModalViewController](https://github.com/sevenapps/SVNModalViewController).
+
 Use init(theme: model:) or init(nibName: bundleName: theme: model) to instantiate an instance of this class
 Either pass in custom SVTheme and SVNBlurredAlertModel instances or nil
 
