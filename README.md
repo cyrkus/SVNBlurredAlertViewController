@@ -7,6 +7,7 @@ A Blurred Overlay View Controller with a circle mask.
 # To use this framework
 SVNBlurredAlertViewController is intended to be added as a child ViewController it has a
 [SVNMaterialButton](https://github.com/sevenapps/SVNMaterialButton) and is a subclass of [SVNModalViewController](https://github.com/sevenapps/SVNModalViewController).
+[SVNTheme](https://github.com/sevenapps/SVNTheme)
 
 Use init(theme: model:) or init(nibName: bundleName: theme: model) to instantiate an instance of this class
 Either pass in custom SVTheme and SVNBlurredAlertModel instances or nil
@@ -35,7 +36,7 @@ Update your project to include the framework:
 
     Carthage update --platform iOS
 
-Add the framework to 'Linked Frameworks and Libraries' in the Xcode Project by dragging and dropping the framework created in
+Add the framework to 'Embedded Binaries' in the Xcode Project by dragging and dropping the framework created in
 
     Carthage/Build/iOS/pathToFramework*.framework
 
