@@ -1,6 +1,8 @@
 # SVNBlurredAlertViewController
 A Blurred Overlay View Controller with a circle mask.
-[SVNBlurredAlertViewController](/images/Rectangle 62.png)
+<p align="center">
+  <img src="/images/Rectangle 62.png" alt="SVNBlurredAlertViewController"/>
+</p>
 
 # To use this framework
 SVNBlurredAlertViewController is intended to be added as a child ViewController it has a
