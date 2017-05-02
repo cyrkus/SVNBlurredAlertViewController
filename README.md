@@ -11,6 +11,7 @@ SVNBlurredAlertViewController is intended to be added as a child ViewController 
 
 Use init(theme: model:) or init(nibName: bundleName: theme: model) to instantiate an instance of this class
 Either pass in custom SVTheme and SVNBlurredAlertModel instances or nil
+If you want to conduct a custom unwind outside of this dismissing itself reference the dismissalCallback: variable.
 
 
 ## To install this framework

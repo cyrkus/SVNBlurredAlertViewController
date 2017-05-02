@@ -12,6 +12,12 @@ import SVNMaterialButton
 import SVNShapesManager
 import SVNTheme
 
+/*
+ A blurred modal viewController intended to be added as a subview of another viewController.
+ Contains a button a body and a header.
+ init with a theme and SVNBlurredAlertModel instance.
+ If you want to conduct a custom unwind outside of this dismissing itself reference the dismissalCallback: variable.
+**/
 open class SVNBlurredAlertViewController: SVNModalViewController {
   
   open lazy var checkmarkMeta: SVNShapeMetaData = {
@@ -43,7 +49,7 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
     return label
   }()
   
-  open var dismisalCallback: (() -> Void)?
+  open var dismissalCallback: (() -> Void)?
   
   open lazy var body: UILabel = {
     let label = UILabel(frame: CGRect(
@@ -153,7 +159,7 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
   //MARK: Actions
   open func didAccept(){
     guard dismisalCallback == nil else {
-      dismisalCallback!()
+      dismissalCallback!()
       return
     }
     shouldDismiss()
