@@ -43,6 +43,8 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
     return label
   }()
   
+  open var dismisalCallback: (() -> Void)?
+  
   open lazy var body: UILabel = {
     let label = UILabel(frame: CGRect(
       x: 65,
@@ -150,6 +152,10 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
   
   //MARK: Actions
   open func didAccept(){
-    self.shouldDismiss()
+    guard dismisalCallback == nil else {
+      dismisalCallback!()
+      return
+    }
+    shouldDismiss()
   }
 }
