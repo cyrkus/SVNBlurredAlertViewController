@@ -10,10 +10,6 @@
 		A13A874B1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874A1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift */; };
 		A13A874D1E9857D80027E214 /* BlurEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874C1E9857D80027E214 /* BlurEffectViewController.swift */; };
 		A13A874F1E9857FA0027E214 /* SVNBlurredAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A874E1E9857FA0027E214 /* SVNBlurredAlertModel.swift */; };
-		A13A87541E98581C0027E214 /* SVNMaterialButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13A87511E98581C0027E214 /* SVNMaterialButton.framework */; };
-		A1862AA41E9ED6ED00C81B1A /* SVNModalViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1862AA11E9ED6ED00C81B1A /* SVNModalViewController.framework */; };
-		A1862AA51E9ED6ED00C81B1A /* SVNShapesManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1862AA21E9ED6ED00C81B1A /* SVNShapesManager.framework */; };
-		A1862AA61E9ED6ED00C81B1A /* SVNTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1862AA31E9ED6ED00C81B1A /* SVNTheme.framework */; };
 		A1B1050D1E9853D8000C923A /* SVNBlurredAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B1050B1E9853D8000C923A /* SVNBlurredAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -21,10 +17,6 @@
 		A13A874A1E9857CE0027E214 /* SVNBlurredAlertModel_Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNBlurredAlertModel_Default.swift; sourceTree = "<group>"; };
 		A13A874C1E9857D80027E214 /* BlurEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectViewController.swift; sourceTree = "<group>"; };
 		A13A874E1E9857FA0027E214 /* SVNBlurredAlertModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNBlurredAlertModel.swift; sourceTree = "<group>"; };
-		A13A87511E98581C0027E214 /* SVNMaterialButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVNMaterialButton.framework; path = Carthage/Build/iOS/SVNMaterialButton.framework; sourceTree = "<group>"; };
-		A1862AA11E9ED6ED00C81B1A /* SVNModalViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVNModalViewController.framework; path = Carthage/Build/iOS/SVNModalViewController.framework; sourceTree = "<group>"; };
-		A1862AA21E9ED6ED00C81B1A /* SVNShapesManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVNShapesManager.framework; path = Carthage/Build/iOS/SVNShapesManager.framework; sourceTree = "<group>"; };
-		A1862AA31E9ED6ED00C81B1A /* SVNTheme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVNTheme.framework; path = Carthage/Build/iOS/SVNTheme.framework; sourceTree = "<group>"; };
 		A1B105081E9853D8000C923A /* SVNBlurredAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVNBlurredAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B1050B1E9853D8000C923A /* SVNBlurredAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVNBlurredAlertViewController.h; sourceTree = "<group>"; };
 		A1B1050C1E9853D8000C923A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,10 +27,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13A87541E98581C0027E214 /* SVNMaterialButton.framework in Frameworks */,
-				A1862AA41E9ED6ED00C81B1A /* SVNModalViewController.framework in Frameworks */,
-				A1862AA51E9ED6ED00C81B1A /* SVNShapesManager.framework in Frameworks */,
-				A1862AA61E9ED6ED00C81B1A /* SVNTheme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,10 +36,6 @@
 		A13A87501E98581C0027E214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1862AA11E9ED6ED00C81B1A /* SVNModalViewController.framework */,
-				A1862AA21E9ED6ED00C81B1A /* SVNShapesManager.framework */,
-				A1862AA31E9ED6ED00C81B1A /* SVNTheme.framework */,
-				A13A87511E98581C0027E214 /* SVNMaterialButton.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
