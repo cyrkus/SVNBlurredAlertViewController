@@ -65,16 +65,16 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
   }()
   
   open lazy var acceptButton: SVNMaterialButton = {
-    let button = SVNMaterialButton(frame: CGRect(
-      x: 35,
-      y: self.view.frame.height - (65 + 25),
-      width: self.view.frame.width - (35 * 2),
-      height: 65), color: self.theme.primaryDialogColor)
+    let button = SVNMaterialButton(frame: CGRect(x: SVNMaterialButton.standardPadding, y: self.view.bounds.height - (SVNMaterialButton.bottomPadding + SVNMaterialButton.standardHeight),
+                                                 width: self.view.bounds.width - SVNMaterialButton.standardPadding * 2, height: SVNMaterialButton.standardHeight),
+                                   viewModel: self.buttonViewModel)
     button.addTarget(self, action: #selector(SVNBlurredAlertViewController.didAccept), for: .touchUpInside)
     return button
   }()
   
-  public var model: SVNBlurredAlertModel?
+  public var model: SVNBlurredAlertModel
+  
+  public var buttonViewModel: SVNMaterialButtonViewModel
   
   override open func viewDidLoad() {
     super.viewDidLoad()
@@ -82,15 +82,21 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
     setCircleCrop()
   }
   
-  public init(theme: SVNTheme?, model: SVNBlurredAlertModel?){
+  public init(theme: SVNTheme?, model: SVNBlurredAlertModel? = SVNBlurredAlertModel_Default(),
+              buttonViewModel: SVNMaterialButtonViewModel? = SVNMaterialButtonViewModel_Default()){
+    self.model = model!
+    self.buttonViewModel = buttonViewModel!
     super.init(nibName: nil, bundle: nil)
     self.theme = theme == nil ? SVNTheme_DefaultDark() : theme!
-    self.model = model == nil ? SVNBlurredAlertModel_Default() : model
+    
   }
   
-  public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, theme: SVNTheme?, model: SVNBlurredAlertModel?) {
+  public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?,
+              theme: SVNTheme?, model: SVNBlurredAlertModel? = SVNBlurredAlertModel_Default(),
+              buttonViewModel: SVNMaterialButtonViewModel? = SVNMaterialButtonViewModel_Default()) {
+    self.model = model!
+    self.buttonViewModel = buttonViewModel!
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    self.model = model == nil ? SVNBlurredAlertModel_Default() : model
     self.theme = theme == nil ? SVNTheme_DefaultDark() : theme!
   }
   
@@ -100,9 +106,9 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
   
   private func setInitialView(){
     self.view.backgroundColor = UIColor.clear
-    self.header.text = model?.header
-    self.body.text = model?.body
-    self.acceptButton.setTitle(model?.buttonText, for: .normal)
+    self.header.text = model.header
+    self.body.text = model.body
+    self.acceptButton.setTitle(model.buttonText, for: .normal)
     
   }
   

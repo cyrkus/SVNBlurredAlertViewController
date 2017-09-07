@@ -1,2 +1,2 @@
 github "sevenapps/SVNModalViewController" "master"
-github "sevenapps/SVNMaterialButton" "master"
+github "sevenapps/SVNMaterialButton" ~> 2.1.1

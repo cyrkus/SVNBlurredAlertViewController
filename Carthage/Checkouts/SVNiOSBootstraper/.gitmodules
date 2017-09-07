@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/Swift-Essentials"]
+	path = Carthage/Checkouts/Swift-Essentials
+	url = https://github.com/bikisDesign/Swift-Essentials.git
