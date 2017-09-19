@@ -29,9 +29,9 @@
 		A155C5631EFD8C2C0069380F /* SVNBootstraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVNBootstraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A155C5661EFD8C2C0069380F /* SVNBootstraper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVNBootstraper.h; sourceTree = "<group>"; };
 		A155C5671EFD8C2C0069380F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A155C56E1EFD8C380069380F /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = ../Device.swift; sourceTree = "<group>"; };
-		A155C5701EFD8C620069380F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ../Reachability.swift; sourceTree = "<group>"; };
-		A155C5721EFD8C740069380F /* Reachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachable.swift; path = ../Reachable.swift; sourceTree = "<group>"; };
+		A155C56E1EFD8C380069380F /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A155C5701EFD8C620069380F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A155C5721EFD8C740069380F /* Reachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachable.swift; path = /Users/abikis/Development/7apps/iOS/Frameworks/SVN/SVNiOSBootstraper/SVNBootstraper/Reachable.swift; sourceTree = "<absolute>"; };
 		A155C5741EFD8CAC0069380F /* Alertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		A155C5791EFD905B0069380F /* DocumentsSearchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsSearchable.swift; sourceTree = "<group>"; };
 		A155C57C1EFD909B0069380F /* KeyboardNotifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotifiable.swift; sourceTree = "<group>"; };

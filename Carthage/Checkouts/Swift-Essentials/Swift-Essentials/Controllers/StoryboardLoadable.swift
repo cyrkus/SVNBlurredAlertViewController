@@ -15,7 +15,7 @@ public protocol StoryboardLoadable {
 }
 
 
-extension StoryboardLoadable where Self: UIViewController {
+public extension StoryboardLoadable where Self: UIViewController {
 
 	public static var storyboardName: String {
 		return String(describing: self)

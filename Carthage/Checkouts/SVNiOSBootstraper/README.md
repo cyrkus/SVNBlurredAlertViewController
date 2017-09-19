@@ -19,7 +19,12 @@ A bootstaping framework filled with protocols I use all the time.
 
 ### DocumentsSearchable
  Quick helper to look up a file in the documents directory
-
+ 
+### UIColor ext
+ Enable support for instanciation with RGB values 
+ 
+### UIDevice ext
+ Adds class methods whichDevice() and whichVersion() to find the current Device's information.
 
 
 ## To use this framework
@@ -50,7 +55,7 @@ Create a CartFile to manage your dependencies:
 
 Open the Cartfile and add this as a dependency. (in OGDL):
 
-    github "sevenapps/PathToRepo*" "master"
+    github "sevenapps/SVNiOSBootstraper" "master"
 
 Update your project to include the framework:
 

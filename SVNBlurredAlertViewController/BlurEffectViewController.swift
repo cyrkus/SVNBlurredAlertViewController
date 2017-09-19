@@ -163,7 +163,7 @@ open class SVNBlurredAlertViewController: SVNModalViewController {
   }
   
   //MARK: Actions
-  open func didAccept(){
+  @objc open func didAccept(){
     guard dismissalCallback == nil else {
       dismissalCallback!()
       return
